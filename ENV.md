@@ -91,4 +91,18 @@ hf download google/gemma-4-E4B-it --local-dir ./model_weights
 
 以上で環境構築は完了です。
 
+## 追記
+> モデル取得で許可不要に！
+
+2026/06時点では、モデル取得に許可がいと記憶していたが、別モデルと同様にモデルIDを入力するだけでモデルインストールが可能になった。そのため下記の手順でモデル取得も可能。
+
+### インストールライブラリ
+```
+pip install --upgrade pip
+pip install accelerate
+pip install pillow
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+```
+
+
 [READMEに移動](README.md)
